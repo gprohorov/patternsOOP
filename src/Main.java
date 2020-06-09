@@ -25,6 +25,14 @@ public class Main {
 
         //-----------------------------------------------------------
 
+             Triangle triangle1 = new Triangle(1, 1, 10);
+
+        System.out.println(triangle1);
+
+        Triangle tr2 = TriangleFactory.create()
+
+
+
 
     }
 
