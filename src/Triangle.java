@@ -1,4 +1,5 @@
-public class Triangle {
+
+public class Triangle  implements IGeometry {
 
     private double a;
     private double b;
@@ -8,6 +9,11 @@ public class Triangle {
         this.a = a;
         this.b = b;
         this.c = c;
+    }
+    public Triangle(double a, double b) {
+        this.a = a;
+        this.b = b;
+        this.c =  Math.sqrt(a*a + b+b);
     }
 
     public Triangle() {
@@ -47,5 +53,14 @@ public class Triangle {
 
     public double getLinearLength() {
         return a + b + c;
+    }
+
+    @Override
+    public String toString() {
+        return "Triangle{" +
+                "a=" + a +
+                ", b=" + b +
+                ", c=" + c +
+                '}';
     }
 }

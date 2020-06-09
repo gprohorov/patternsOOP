@@ -29,9 +29,18 @@ public class Main {
 
         System.out.println(triangle1);
 
-        Triangle tr2 = TriangleFactory.create()
+        Triangle tr2 = TriangleFactory.create(1,1, 10);
+
+        System.out.println(tr2);
 
 
+
+
+        // 4th method  - Abstract Factory
+
+        IGeometry tr5 = AbstractFactory.create(4,5, Figure.TRIANGLE);
+
+        System.out.println(tr5);
 
 
     }

@@ -1,4 +1,8 @@
-public class Rectangle {
+
+
+
+
+public class Rectangle implements IGeometry{
 
     private int id;
     private int length;
@@ -63,5 +67,15 @@ public class Rectangle {
                 ", width=" + width +
                 ", PI=" + PI +
                 '}';
+    }
+
+    @Override
+    public double getArea() {
+        return 0;
+    }
+
+    @Override
+    public double getLinearLength() {
+        return 0;
     }
 }
